@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<script src="fancifymytext.js"></script>  <!-- link to your script file here -->
+		
+	</head>
+
+	<body>
+		<nav class ="navbar">  // links all other assignments and pages to this main page
+		<ul>
+			<li>
+			<a href = "index.html">Main Page</a>
+			</li>
+			<li>
+			<a href = "fancifymytext.html">Assignment 5</a>
+			</li>
+			<li>
+			<a href = "encrypt-it.html"> Assignment 6</a>
+			</li>
+			<li></li>
+		</ul>
+		</nav>
+		<h1>Fancify my Text</h1>
+		<!-- Your UI controls go here-->
+		<fieldset>
+ 			<label for="Text">Text</label>
+			<br>
+ 			<textarea id="text" name="text" rows="4" cols="30" placeholder="Type here..."></textarea>
+		</fieldset>
+
+		<fieldset>
+			<button id="bigButton" onclick="Bigger()">Bigger!</button>
+			<button id = "mooButton" onclick = "mooText()" >MOO-ify</button>
+
+			<input type="radio" id="fancyshamcy" name="fancyshamcy" value="fancy" onchange="changeStyle()">
+			<label for="fancyshamcy">FancyShamcy</label><br>
+
+			<input type="radio" id="boringbetty" name="boringbetty" value="boring" onchange="changeStyle()">
+			<label for="boringbetty">BoringBetty</label>
+		</fieldset>
+	
+		
+	</body>
+</html>
